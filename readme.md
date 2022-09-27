@@ -1,9 +1,10 @@
 # BMI Calculator 
-## Calculate Your Body Mass Index!  
+***Calculate Body Mass Index.***
+
+...in progress
 
 - calculator BMI; 
 - canvas liquid animation;
-...in progress
 
 
-#### [see BMI calculator](https://oljs.github.io/bmi-calculator/)
+**[see BMI calculator](https://oljs.github.io/bmi-calculator/)**
