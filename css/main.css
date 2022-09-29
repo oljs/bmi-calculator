@@ -7,34 +7,26 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 8px;
   height: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   html {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  html {
-    font-size: calc(8px + (30 - 20) * (100vw - 320px) / (1280 - 320));
+    font-size: 12px;
   }
 }
 
 body {
-  height: 100%;
   min-height: 100vh;
   background-color: #fff;
   font-family: "Nunito", sans-serif; 
-  padding: 60px 40px;
   position: relative;
 }
 
@@ -54,17 +46,25 @@ canvas {
   position: absolute;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 3.25rem;
+}
+
 .calc {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 5;
-  max-width: 450px;
+  max-width: 37.5rem;
   background: #fafafa;
-  border-radius: 38px;
+  border-radius: 3rem;
   text-align: center;
   position: relative;
+  margin: 0 auto;
 }
 
 .calc::before {
@@ -75,44 +75,44 @@ canvas {
   left: -6%;
   top: -5%;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
-  border-radius: 60px;
+  box-shadow: 0px 0px 14rem -2.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 5rem;
   z-index: -1;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 36px;
-  padding: 30px 0;
+  font-size: 3rem;
+  padding: 2.5rem 0;
 }
 
 .calc__content {
-  padding: 0 40px;
+  padding: 0 3.75rem;
 }
 
 .calc__input {
   background: #fff;
-  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 8rem -2.5rem rgba(0, 0, 0, 0.15);
   border-radius: 28px;
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 2rem 0;
+  margin-bottom: 2.5rem;
 }
 
 .calc__input label {
   display: block;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .calc__input input {
   outline: none;
   border: none;
-  border-bottom: 1px solid #4f7df9;
+  border-bottom: 0.1rem solid #4f7df9;
   width: 60%;
   text-align: center;
-  font-size: 28px;
+  font-size: 2.25rem;
   font-family: "Nunito", sans-serif;
 }
 
@@ -120,9 +120,9 @@ h1 {
   font-family: "Nunito", sans-serif;
   color: #fff;
   background: #4f7df9;
-  font-size: 18px;
-  border-radius: 12px;
-  padding: 12px 0;
+  font-size: 1.75rem;
+  border-radius: 1rem;
+  padding: 1rem 0;
   width: 100%;
   outline: none;
   border: none;
@@ -135,25 +135,25 @@ h1 {
 }
 
 .calc__res {
-  padding: 30px 20px;
+  padding: 2.5rem 2.25rem;
 }
 
 .calc__res p {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2rem;
   color: #000;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .calc__res #result {
-  font-size: 36px;
+  font-size: 3rem;
   font-weight: 900;
   color: #4f7df9;
   background-color: #eaeaea;
   display: inline-block;
-  padding: 7px 22px;
-  border-radius: 57px;
-  margin-bottom: 25px;
+  padding: 0.75rem 2.25rem;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
 }
 
 .calc__res #comment {
