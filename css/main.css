@@ -53,7 +53,7 @@ canvas {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  padding: 5rem 3.5rem;
+  padding: 6rem;
 }
 
 .calc {
@@ -93,7 +93,7 @@ h1 {
 .calc__input {
   background: #fff;
   box-shadow: 0px 0px 8rem -2.5rem rgba(0, 0, 0, 0.15);
-  border-radius: 28px;
+  border-radius: 2.5rem;
   padding: 2rem 0;
   margin-bottom: 2.5rem;
 }
@@ -145,7 +145,7 @@ h1 {
   margin-bottom: .5rem;
 }
 
-.calc__res #result {
+.calc__res .result {
   font-size: 3rem;
   font-weight: 900;
   color: #4f7df9;
@@ -156,7 +156,7 @@ h1 {
   margin: 1rem 0 2rem;
 }
 
-.calc__res #comment {
+.comment span {
   color: #4f7df9;
   font-weight: 800;
 }

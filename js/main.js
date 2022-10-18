@@ -16,7 +16,7 @@ btn.addEventListener('click', function () {
 
   bmi = bmi.toFixed(2);
 
-  document.getElementById('result').innerHTML = bmi;
+  document.querySelector('.result').innerHTML = bmi;
 
   let status = '';
 
@@ -36,11 +36,19 @@ btn.addEventListener('click', function () {
     status = 'Obese';
     color1 = '#D32536';
   }
+
   document.querySelector('.comment').innerHTML = `You are <span id="comment">${status}</span>`;
-  document.getElementById('result').style.color = color1;
-  document.getElementById('comment').style.color = color1;
+
+  let res = document.querySelector('.result');
+  let comm = document.getElementById('comment');
+
+  const arr = [res, comm];
+
+  arr.forEach(el => {
+    el.style.color = color1;
+  });
   
-  myfunc();
+  backLava();
 
 });
 
@@ -49,7 +57,7 @@ btn.addEventListener('click', function () {
 // Canvas background
 //
 
-function myfunc() {
+function backLava() {
 
   let lava;
   const ge1doot = {
@@ -313,5 +321,5 @@ function myfunc() {
 
  }
 
- myfunc();
- onresize = () => myfunc();
+ backLava();
+ onresize = () => backLava();
